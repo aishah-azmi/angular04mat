@@ -7,6 +7,20 @@ export const menus = [
     'chip': {'value': 1, 'color': 'accent'},
   },
   {
+    'name': 'Payment',
+    'icon': 'shopping_basket',
+    'link': '/payment',
+    'open': false,
+    'chip': {'value': 1, 'color': 'accent'},
+  },
+  {
+    'name': 'Comment',
+    'icon': 'shopping_basket',
+    'link': '/comment/list',
+    'open': false,
+    'chip': {'value': 1, 'color': 'accent'},
+  },
+  {
     'name': 'Academy',
     'icon': 'list',
     'link': false,

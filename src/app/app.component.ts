@@ -9,7 +9,9 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'app';
 
+
   getRouteAnimation(outlet) {
     return outlet.activatedRouteData.animation;
   }
 }
+

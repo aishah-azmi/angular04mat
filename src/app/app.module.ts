@@ -11,13 +11,18 @@ import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
+import {Payment} from './payment/payment';
+import {CommentModule} from './comment/comment.module';
+import {CommentService} from '../services/comment.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    Payment,
   ],
   imports: [
+    CommentModule,
     BrowserModule,
     CoreModule,
     BrowserAnimationsModule,
@@ -27,8 +32,8 @@ import {CohortStatusPipe} from './academy/cohort-status.pipe';
     DashboardModule,
     AcademyModule,
   ],
-  providers: [AcademyService],
-  bootstrap: [AppComponent]
+  providers: [AcademyService,],
+  bootstrap: [AppComponent,]
 })
 export class AppModule {
 }
