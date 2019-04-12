@@ -1,1 +1,11 @@
-Comment Detail Page
+<!--<pre>{{comment$ | async | json}}</pre>-->
+
+<div [formGroup]="mainForm">
+  <input formControlName="" placeholder="postId"/>
+  <input formControlName="" placeholder="id"/>
+  <input formControlName="" placeholder="name"/>
+  <input formControlName="" placeholder="email"/>
+  <input formControlName="" placeholder="body"/>
+</div>
+
+<trg-template-syntax (bindingEmitter)="printingBinding($event)"></trg-template-syntax>

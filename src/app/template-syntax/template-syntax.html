@@ -1,0 +1,14 @@
+<h1>{{oneClassToTemplate}}</h1> <!--nak pakai properties-->
+<input value="{{oneClassToTemplate}}"/>
+
+<!--keydown : keyboard enter, must use with ngModel-->
+<h1>{{twoClassToTemplate}}</h1>
+<input (keydown)="plusCount()" [(ngModel)]="twoClassToTemplate"/>
+
+
+<!--Plus Count onHover-->
+<h1 (mouseover)="plusCount()"> Hover on Top{{hoverCount}}</h1>
+
+<h1>{{binding}}</h1>
+<input (mouseover)="bindingEmitter.emit(binding)" [(ngModel)]="binding"/>
+

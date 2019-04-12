@@ -14,6 +14,8 @@ import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {Payment} from './payment/payment';
 import {CommentModule} from './comment/comment.module';
 import {CommentService} from '../services/comment.service';
+import {FormsModule} from '@angular/forms';
+import {TemplateSyntax} from './template-syntax/template-syntax';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import {CommentService} from '../services/comment.service';
     MainModule,
     DashboardModule,
     AcademyModule,
+    FormsModule,
   ],
+
   providers: [AcademyService,],
   bootstrap: [AppComponent,]
 })

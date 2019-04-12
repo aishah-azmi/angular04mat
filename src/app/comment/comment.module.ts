@@ -15,12 +15,14 @@ import {CommentService} from '../../services/comment.service';
 import {CommentListPage} from './list/comment-list-page';
 import {CommentDetailPage} from './detail/comment-detail-page';
 import {LimitPipe} from './list/limit-pipe';
+import {TemplateSyntax} from '../template-syntax/template-syntax';
 
 @NgModule({
   declarations: [
     CommentListPage,
     CommentDetailPage,
     LimitPipe,
+    TemplateSyntax,
   ],
   providers:[
     CommentService,],

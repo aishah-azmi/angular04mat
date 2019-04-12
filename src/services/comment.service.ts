@@ -10,11 +10,11 @@ export class CommentService {
   }
   // TODO findComments
   findComments(): Observable<Comments[]>{
-    return this.http.get<Comments[]>('https://jsonplaceholder.typicode.com/comments');
+    return this.http.get<Comments[]>('https://jsonplaceholder.typicode.com/comments/');
 }
 
   // TODO findById
-  findCommentsById(id:number): Observable<Comments[]>{
-    return this.http.get<Comments[]>('https://jsonplaceholder.typicode.com/comments'+id);
+  findCommentsById(param:{id:number}): Observable<Comments>{
+    return this.http.get<Comments>('https://jsonplaceholder.typicode.com/comments/'+ param.id);
   }
 }
