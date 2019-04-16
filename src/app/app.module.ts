@@ -16,12 +16,14 @@ import {CommentModule} from './comment/comment.module';
 import {CommentService} from '../services/comment.service';
 import {FormsModule} from '@angular/forms';
 import {TemplateSyntax} from './template-syntax/template-syntax';
+import {ApprenticeCreatorDialog} from './academy/apprentice-creator.dialog';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Payment,
+    ApprenticeCreatorDialog
   ],
   imports: [
     CommentModule,

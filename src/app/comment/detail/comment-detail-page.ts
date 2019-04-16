@@ -11,11 +11,11 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 
 export class CommentDetailPage {
-  comment$ : Observable<Comments>;
+  comment$: Observable<Comments>;
   mainForm: FormGroup;
 
-  constructor(private route:ActivatedRoute,
-              private form:FormBuilder,
+  constructor(private route: ActivatedRoute,
+              private form: FormBuilder,
               private commentService: CommentService) {
     this.mainForm = this.form.group([{
       postId: [''],

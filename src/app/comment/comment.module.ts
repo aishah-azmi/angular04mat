@@ -16,6 +16,7 @@ import {CommentListPage} from './list/comment-list-page';
 import {CommentDetailPage} from './detail/comment-detail-page';
 import {LimitPipe} from './list/limit-pipe';
 import {TemplateSyntax} from '../template-syntax/template-syntax';
+import {CommentEditPage} from './comment-edit/comment-edit.page';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,10 @@ import {TemplateSyntax} from '../template-syntax/template-syntax';
     CommentDetailPage,
     LimitPipe,
     TemplateSyntax,
+    CommentEditPage
   ],
-  providers:[
-    CommentService,],
+  providers: [
+    CommentService, ],
   bootstrap : [],
   imports:[
     CommonModule,

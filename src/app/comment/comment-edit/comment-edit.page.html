@@ -1,0 +1,22 @@
+<div [formGroup]="mainForm">
+  <input formControlName="postId" placeholder="postid"/>
+  <input formControlName="id" placeholder="id"/>
+  <input formControlName="name" placeholder="name"/>
+  <input formControlName="email" placeholder="email"/>
+  <input formControlName="body" placeholder="body"/>
+  <br/>
+  <!-- <button onclick="submitComment()" value="submit">Click me</button>-->
+  <button (click)="submitComment()" value="submit">Submit</button>
+
+</div>
+
+<h1 mat-dialog-title>Asset Editor</h1>
+<div mat-dialog-content>
+  <!--content here-->
+</div>
+<div mat-dialog-actions>
+</div>
+
+<a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3"   (click)="show()">
+  <mat-icon>add</mat-icon>
+</a>

@@ -9,6 +9,7 @@ import {Payment} from './payment/payment';
 import {CommentListPage} from './comment/list/comment-list-page';
 import {CommentDetailPage} from './comment/detail/comment-detail-page';
 import {TemplateSyntax} from './template-syntax/template-syntax';
+import {CommentEditPage} from './comment/comment-edit/comment-edit.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -21,5 +22,6 @@ export const appRoutes: Routes = [{
     {path: 'comment/list', component: CommentListPage},
     {path: 'comment/:id', component: CommentDetailPage},
     {path: 'template', component: TemplateSyntax},
+    {path: 'editComment', component: CommentEditPage},
   ]
 }];
